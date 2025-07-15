@@ -2,7 +2,7 @@ services:
   - type: web
     name: bitcoin-mvrv-dashboard
     env: python
-    runCommand: gunicorn bitcoin_mvrv_dashboard:app
+    runCommand: gunicorn app:app
     envVars:
       - key: PORT
         value: 10000
